@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff0f5" />
+  <meta name="description" content="A little website for a big, heartfelt apology." />
+  <title>A Little Sorry, A Lot of Love ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="float-layer" id="floatLayer" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Back to the beginning">petals & little apologies <span>♡</span></a>
+    <button class="sound-button" id="soundToggle" type="button" aria-pressed="false"><span id="soundIcon">♫</span> <span id="soundLabel">soft sounds</span></button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="eyebrow"><span class="sparkle">✧</span> a tiny corner of the internet, just for you <span class="sparkle">✧</span></div>
+      <div class="hero-art" aria-hidden="true"><span class="heart heart-a">♡</span><span class="heart heart-b">♥</span><span class="flower">✿</span><span class="butterfly">🦋</span><span class="tiny-star">✧</span></div>
+      <h1>Hey, my<br /><em>favorite human.</em></h1>
+      <p class="hero-copy">I made you a little something.<br />It comes with a sorry, a hug-in-words, and a whole lot of love.</p>
+      <button class="primary-button" id="openNote" type="button">Open your little letter <span>♡</span></button>
+      <p class="tiny-note">no rush. read it whenever you're ready 🌷</p>
+      <a class="scroll-cue" href="#letter">↓ <span>there's more below</span></a>
+    </section>
+
+    <section class="letter-section section" id="letter">
+      <div class="section-kicker">from my heart to yours</div>
+      <article class="letter-card" id="letterCard">
+        <div class="letter-top">a letter for my person <span>♡</span></div>
+        <h2>I'm sorry, truly.</h2>
+        <p>Hey you,</p>
+        <p>I know things don't feel quite right between us, and I hate that my words or actions hurt you. I'm not here to make excuses or pretend it wasn't a big deal. I want to understand how it felt for you, and I'm genuinely sorry.</p>
+        <p>Your friendship means so much more to me than winning an argument or being right. You matter to me on the good days, the awkward days, and even the days when we don't know what to say to each other.</p>
+        <p>I'm going to try to show you that I mean this—not just with a cute website (although I did make you one 😭), but by listening, taking responsibility, and doing better.</p>
+        <p>You don't have to forgive me instantly. Take the time you need. Whenever you're ready, I'd really like to hear how you feel.</p>
+        <p class="letter-signoff">I'm sorry, and I'm grateful for you.<br /><span>your very imperfect friend, with lots of love</span> <b>♡</b></p>
+        <div class="letter-stamp" aria-hidden="true">sealed<br />with love</div>
+      </article>
+      <button class="soft-button" id="highlightNote" type="button">One more tiny thing ✧</button>
+    </section>
+
+    <section class="reasons-section section" id="reasons">
+      <div class="section-kicker">little reminders</div>
+      <h2 class="section-title">Things I hope you know <em>always</em></h2>
+      <p class="section-intro">Tap each little card. They're small, but I mean every word.</p>
+      <div class="reason-grid">
+        <button class="reason-card" type="button" aria-expanded="false"><span class="reason-icon">🌷</span><span class="reason-title">You matter.</span><span class="reason-hidden">Your feelings matter, even when it's hard for me to hear them. I want to understand.</span><span class="tap-hint">tap to open ♡</span></button>
+        <button class="reason-card" type="button" aria-expanded="false"><span class="reason-icon">🧸</span><span class="reason-title">I'm listening.</span><span class="reason-hidden">I want to listen without interrupting, dismissing you, or turning it into a debate.</span><span class="tap-hint">tap to open ♡</span></button>
+        <button class="reason-card" type="button" aria-expanded="false"><span class="reason-icon">☁️</span><span class="reason-title">No pressure.</span><span class="reason-hidden">You can take your time. An apology doesn't mean you owe me an immediate answer.</span><span class="tap-hint">tap to open ♡</span></button>
+        <button class="reason-card" type="button" aria-expanded="false"><span class="reason-icon">💌</span><span class="reason-title">I'll do better.</span><span class="reason-hidden">I know trust grows through actions. I want to make a real effort, not just say pretty words.</span><span class="tap-hint">tap to open ♡</span></button>
+      </div>
+    </section>
+
+    <section class="play-section section">
+      <div class="section-kicker">a very important question</div>
+      <div class="question-card">
+        <div class="question-doodle" aria-hidden="true">ʚ♡ɞ</div>
+        <h2>Can I try to make things right?</h2>
+        <p>Not asking you to pretend nothing happened. Just asking for a chance to listen and do better, whenever you're ready.</p>
+        <div class="answer-buttons">
+          <button class="primary-button" id="readyButton" type="button">I'm open to talking ♡</button>
+          <button class="outline-button" id="timeButton" type="button">I need some time 🌙</button>
+        </div>
+        <p class="response-message" id="responseMessage" role="status" aria-live="polite"></p>
+        <p class="micro-copy">both answers are okay. your feelings come first.</p>
+      </div>
+    </section>
+
+    <section class="final-section section" id="final">
+      <div class="final-flower" aria-hidden="true">✿</div>
+      <p class="section-kicker">one last thing</p>
+      <h2>Whatever happens next,<br /><em>I'm glad you're in my life.</em></h2>
+      <p class="final-copy">Our friendship is important to me. I hope we can find our way back to feeling okay with each other, one honest conversation at a time.</p>
+      <button class="primary-button" id="surpriseButton" type="button">A tiny surprise for you <span>✧</span></button>
+      <div class="surprise-message" id="surpriseMessage" hidden>
+        <span class="surprise-heart">♡</span>
+        <p>Official certificate of being a very loved human:</p>
+        <strong>awarded to YOU</strong>
+        <span class="certificate-line">for being wonderfully, uniquely you.</span>
+        <span class="certificate-footer">valid always · no expiration date 🌷</span>
+      </div>
+      <p class="signature">made with care, a little nervousness, and lots of love <span>♡</span></p>
+    </section>
+  </main>
+
+  <footer>made of petals, honesty, and hope <span>♡</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
